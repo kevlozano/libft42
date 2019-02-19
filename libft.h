@@ -6,7 +6,7 @@
 /*   By: klozano- <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/11 16:11:05 by klozano-          #+#    #+#             */
-/*   Updated: 2019/02/18 10:42:43 by klozano-         ###   ########.fr       */
+/*   Updated: 2019/02/18 19:28:55 by klozano-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,11 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+int					ft_countif(char **tab, int (*f)(char*));
+t_list				ft_list_last(t_list *begin_list);
+int					ft_list_size(t_list *begin_list);
+void				ft_swap(int *x, int *y);
+void				ft_selsort(int *arr, int n);
 int					ft_isalpha(int c);
 int					ft_isdigit(int d);
 int					ft_isascii(int d);
